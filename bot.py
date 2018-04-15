@@ -7,7 +7,10 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or('.'),description="G
 @bot.command()
 async def testing(ctx):
   """kkkkk"""
-  await ctx.send("testing...")
+  color = discord.Color(value=0x00ff00)
+  em=discord.Emned(color=color, title='testing')
+  em.description = f"{bot.latenncy * 11000:.4f} ms"
+  await ctx.send(embed-em)
 
 @bot.command()
 async def ping(ctx):
