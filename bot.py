@@ -6,6 +6,7 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or('.'),description="G
 
 @bot.command()
 async def testing(ctx):
+  """kkkkk"""
   await ctx.say("testing...")
 
 bot.run(os.environ.get('TOKEN'))
